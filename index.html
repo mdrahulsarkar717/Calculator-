@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Project -->
+   <div class="container">
+       <div class="rejult">
+           <input type="text" name="number" id="number" placeholder="0">
+           
+       </div>
+       <div class="no-button">
+            <button onclick="number.value = ''" >AC</button>
+            <button onclick="number.value = number.value.tostring().slice(0,-1)">DE</button>
+            <button onclick="number.value +='.'" >.</button>
+            <button onclick="number.value +='/'" >/</button>
+            <button onclick="number.value +='9'">9</button>
+            <button onclick="number.value +='8'">8</button>
+            <button onclick="number.value +='7'">7</button>
+            <button onclick="number.value +='*'">*</button>
+            <button onclick="number.value +='6'">6</button>
+            <button onclick="number.value +='5'">5</button>
+            <button onclick="number.value +='4'">4</button>
+            <button onclick="number.value +='+'">+</button>
+            <button onclick="number.value +='3'">3</button>
+            <button onclick="number.value +='2'">2</button>
+            <button onclick="number.value +='1'">1</button>
+            <button onclick="number.value +='-'">-</button>
+            <button onclick="number.value +='0'">0</button>
+            <button onclick="number.value +='00'">00</button>
+            
+            <button class="equal" onclick="number.value = eval(number.value)">=</button>
+            
+       </div>
+   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
